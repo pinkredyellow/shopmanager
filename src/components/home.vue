@@ -18,13 +18,13 @@
     <el-container>
     <el-aside width="200px" class="asdie"> 
         <!-- 1 -->
-        <el-menu unique-opened default-active="2">
+        <el-menu router  unique-opened default-active="2">
             <el-submenu index="1">
                  <template slot="title">
                    <i class="el-icon-location"></i>
                    <span>用户管理</span>
                 </template>
-                 <el-menu-item index="1-3">
+                 <el-menu-item index="user">
                     <i class="el-icon-menu"></i> 
                      用户列表
                      </el-menu-item>
@@ -90,7 +90,9 @@
         
   
     </el-aside>
-    <el-main class="main">Main</el-main>
+    <el-main class="main">
+     <router-view></router-view>
+    </el-main>
     </el-container>
   </el-container>
 </template>
